@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 *{
     font-family: 'Poppins';
 }
@@ -8,7 +7,7 @@ body{
     margin: 0;
     background-color: #363738;
     width: 100vw;
-    height: 100vb;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,11 +15,12 @@ body{
 
 .App{
     width: 350px;
-    padding: 20px;
+    padding: 40px;
     background-color: #130f0f;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0,0, .1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .input-decoration{
     width: 100%;
     display: flex;
@@ -48,10 +48,12 @@ body{
     height: 30px;
     cursor: pointer;
 }
+
 p{
     color: white;
     font-size: 16px;
 }
+
 .image{
     text-align: center;
     height: 150px;
@@ -61,9 +63,9 @@ p{
 .image img{
     height: 160px;
     width: 160px;
-
 }
-.temp,.location,.country{
+
+.temp, .location, .country{
     margin-bottom: 5px;
     font-size: 35px;
     text-transform: uppercase;
@@ -73,7 +75,6 @@ p{
     font-weight: 500;
     font-size: 35px;
     color: white;
-
 }
 .location{
     color: #ffbc00;
@@ -85,6 +86,7 @@ p{
     color: white;
     font-weight: 500;
 }
+
 .card{
     display: flex;
     justify-content: space-evenly;
@@ -98,22 +100,22 @@ p{
     align-items: center;
     justify-content: center;
     padding: 10px;
-
 }
 .card div span{
     font-size: 14px;
     padding-bottom: 10px;
 }
-.humidity-percent,.wind-percent,.card div span :nth-child(2){
+.humidity-percent, .wind-percent, .card div span :nth-child(2){
    font-size: 18px;
    font-weight: bold;
    color: #fff;
    padding-top: 10px;
-
 }
+
 input[type="text"]{
     color: white;
 }
+
 .data-container{
     padding-left: 20px;
     padding-right: 20px;
@@ -122,22 +124,26 @@ input[type="text"]{
     justify-content: space-between;
     margin-top: 20px;
 }
+
 .element{
     text-align: center;
 }
+
 .icon{
     height: 50px;
     width: 50px;
 }
+
 .text{
     font-size: 12px;
     color: #fff;
 }
+
 .copyright{
     text-align: center;
     padding-top: 15px;
-
 }
+
 .copyright a{
     text-align: center;
     text-decoration: none;
@@ -146,10 +152,63 @@ input[type="text"]{
 .copyright a span{
     color: #fff;
 }
-.error-message,.city-not,.loading-message{
+
+.error-message, .city-not, .loading-message{
     margin-top: 10px;
     color:#fff;
     font-size: 25px;
     font-weight: 400;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .App {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .temp, .location {
+        font-size: 28px;
+    }
+
+    .country {
+        font-size: 16px;
+    }
+
+    .card div span {
+        font-size: 12px;
+    }
+
+    .data-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .image img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .search {
+        height: 18px;
+        width: 18px;
+    }
+
+    .cityinput {
+        height: 28px;
+        font-size: 14px;
+    }
+    
+    .copyright a {
+        font-size: 12px;
+    }
+
+    .error-message, .city-not, .loading-message {
+        font-size: 20px;
+    }
 }
